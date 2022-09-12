@@ -9,9 +9,13 @@ public class characterCount {
 
         HashMap<Character, Integer> letterCount = new HashMap<>();
         for(int x=0; x<charactersInString.length; x++){
-            char letter = charactersInString[x];
-            int count =1;
-            letterCount.put(letter, count);
+            if (letterCount.containsKey(x)){
+                //letterCount.put(letter, letterCount.get(count) +)
+;            } else {
+                char letter = charactersInString[x];
+                int count = 1;
+                letterCount.put(letter, count);
+            }
         }
 
     }
